@@ -6,7 +6,10 @@
 
 main{
     min-height: 100vh;
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    background: linear-gradient(
+        to right top,
+         #65dfc9,
+         #6cdbeb);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,9 +17,12 @@ main{
 
 .Glass{
     background: white;
-    min-height: 80vh;
-    width: 60%;
-    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    min-height: 85vh;
+    width: 65%;
+    background: linear-gradient(
+        to right bottom,
+         rgba(255,255,255,0.7),
+         rgba(255,255,255,0.3));
     border-radius: 3rem;
     z-index: 2;
     backdrop-filter: blur(2rem);
@@ -37,7 +43,7 @@ main{
 
 .circle1{
     top: 5%;
-    right: 15%;
+    right: 10%;
 }
 
 .circle2{
