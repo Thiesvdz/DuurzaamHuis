@@ -129,3 +129,27 @@ section {
     margin-top: 12.5px;
     margin-bottom: 12.5px;
 }
+
+.Namen {
+    text-align: center;
+    padding: 10px 40px;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 70%;
+    border-radius: 20%;
+}
+
+.Logo {
+    padding-left: 40%;
+}
+
+.Informatie {
+    text-align: center;
+    padding: 10px 40px;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 70%;
+    border-radius: 20%;
+}
