@@ -13,6 +13,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .Glass{
@@ -26,6 +27,7 @@ main{
     border-radius: 3rem;
     z-index: 2;
     backdrop-filter: blur(2rem);
+    padding: 30px;
     /* border:solid rgb(84, 228, 233);*/
 } 
 
@@ -53,4 +55,77 @@ main{
 .Namen{
     margin: 60px;
     
+}
+
+#dashboard > div {
+    border: black 1px solid;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+#dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+    height: 85vh;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item1 > h2 {
+    padding: 7px;
+}
+
+.item2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.item2 > h2 {
+    padding: 7px;
+}
+
+
+.item3 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+.item3 > h2 {
+    padding: 7px;
+}
+
+.item4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item4 > h2 {
+    padding: 7px;
+}
+
+.item5 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+
+.item5 > h2 {
+    padding: 7px;
+}
+
+footer {
+    margin-top: 12.5px;
+}
+
+header {
+    margin-bottom: 12.5px;
+}
+
+section {
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
 }
