@@ -140,8 +140,10 @@ section {
     border-radius: 20%;
 }
 
-.Logo {
-    padding-left: 40%;
+#logo {
+    padding-left: 35%;
+    border-radius: ;
+    height: 200px;
 }
 
 .Informatie {
