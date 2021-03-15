@@ -19,8 +19,8 @@ main{
 
 .Glass{
     background: white;
-    min-height: 85vh;
-    width: 65%;
+    min-height: 115vh;
+    width: 80%;
     background: linear-gradient(
         to right bottom,
          rgba(255,255,255,0.7),
@@ -66,15 +66,17 @@ main{
 
 #dashboard {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "gas   gas"
+                         "licht temp"
+                         "water water"
+                         "elek elek";
     grid-gap: 30px;
-    height: 85vh;
+    height: 115vh;
 }
 
 .item1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-area: gas;
 }
 
 .item1 > h2 {
@@ -82,8 +84,7 @@ main{
 }
 
 .item2 {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-area: licht;
 }
 
 .item2 > h2 {
@@ -92,8 +93,7 @@ main{
 
 
 .item3 {
-    grid-column-start: 4;
-    grid-column-end: 6;
+    grid-area: temp;
 }
 
 .item3 > h2 {
@@ -101,8 +101,7 @@ main{
 }
 
 .item4 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-area: water;
 }
 
 .item4 > h2 {
@@ -110,8 +109,7 @@ main{
 }
 
 .item5 {
-    grid-column-start: 3;
-    grid-column-end: 6;
+    grid-area: elek;
 }
 
 .item5 > h2 {
@@ -160,3 +158,159 @@ section {
     grid-column-start: 3;
     grid-column-end: 4;
 }
+
+
+@media screen and (min-width: 1450px) {
+    main{
+        min-height: 100vh;
+        background: linear-gradient(
+            to right top,
+             #65dfc9,
+             #6cdbeb);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .Glass{
+        background: white;
+        min-height: 85vh;
+        width: 80%;
+        background: linear-gradient(
+            to right bottom,
+             rgba(255,255,255,0.7),
+             rgba(255,255,255,0.3));
+        border-radius: 3rem;
+        z-index: 2;
+        backdrop-filter: blur(2rem);
+        padding: 30px;
+        /* border:solid rgb(84, 228, 233);*/
+    } 
+    
+    .circle1, .circle2, .circle3{
+        background: white;
+        background: linear-gradient(
+        to right bottom,
+         rgba(255,255,255,0.8),
+         rgba(255,255,255,0.3));
+        height: 20rem;
+        width: 20rem;
+        position: absolute;
+        border-radius: 50%;
+    }
+    
+    .circle1{
+        top: 5%;
+        right: 10%;
+    }
+    
+    .circle2{
+        bottom: 5%;
+        left: 10%;
+    }
+    .circle3{
+        bottom: -30%;
+        left: 75%;
+    }
+    
+    #dashboard > div {
+        border: black 1px solid;
+        border-radius: 1.5rem;
+        text-align: center;
+    }
+    
+    #dashboard {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "gas   gas   licht temp"
+                             "water water elek  elek";
+        grid-gap: 30px;
+        height: 85vh;
+    }
+    
+    .item1 {
+        grid-area: gas;
+    }
+    
+    .item1 > h2 {
+        padding: 7px;
+    }
+    
+    .item2 {
+        grid-area: licht;
+    }
+    
+    .item2 > h2 {
+        padding: 7px;
+    }
+    
+    
+    .item3 {
+        grid-area: temp;
+    }
+    
+    .item3 > h2 {
+        padding: 7px;
+    }
+    
+    .item4 {
+        grid-area: water;
+    }
+    
+    .item4 > h2 {
+        padding: 7px;
+    }
+    
+    .item5 {
+        grid-area: elek;
+    }
+    
+    .item5 > h2 {
+        padding: 7px;
+    }
+    
+    footer {
+        margin-top: 12.5px;
+    }
+    
+    header {
+        margin-bottom: 12.5px;
+    }
+    
+    section {
+        margin-top: 12.5px;
+        margin-bottom: 12.5px;
+    }
+    
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15%;
+        height: 199px; 
+    }
+    
+    .footervak{
+        display: grid;
+        grid-gap: 30px;
+        height: 25vh;
+    }
+    
+    .footervak > div{
+        border: black 1px solid;
+        border-radius: 1.5rem;
+        text-align: center;
+    }
+    
+    .footerinfo{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    .footereigenaren{
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+}
+
