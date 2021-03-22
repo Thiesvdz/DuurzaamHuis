@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <script src="/Data/js/apparaten.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>Duurzaam osso niffo</title>
 </head>
 <body>
     <div id="dashboard">
         <div class="item Header"><img src="/Logo/Duurzaamhuislogo.png" alt="" style="height: 175px; padding-top: 20px;"></div>
-        <div class="item Temperatuur">Temperatuur<br><br><br><br><br></div>
+        <div class="item Temperatuur">
+            <div class="apparaat" data-id="PHO">
+                <div>Temperatuur</div>
+                <div>
+                    <p>minuten per dag: <span>0</span></p>
+                    <input type="range" min="0" max="240" step="10" value="15" class="slider" id="myRange"/>
+                </div>
+                <h2>Verbruik of kosten</h2>
+                <button class="button">Toon verbruik</button>
+            </div>
+        </div>
         <div class="item Licht">Licht<br><br><br><br><br></div>
         <div class="item Water">Water<br><br><br><br><br></div>
-        <div class="item Gas">Gas<br><br><br></div>
+        <div class="item Gas">Gas<br><br><br><br><br></div>
         <div class="item Elektriciteit">Elektriciteit<br><br><br><br><br></div>
     </div>
 </body>

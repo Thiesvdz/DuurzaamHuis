@@ -1,0 +1,26 @@
+[
+    {
+        "naam": "Smartphone",
+        "vermogen": 6.9,
+        "image": "images/smartphone.jpg",
+        "code": "PHO"
+    },
+    {
+        "naam": "Televisie",
+        "vermogen": 10,
+        "image": "images/1990-tv.jpg",
+        "code": "TV"
+    },
+    {
+        "naam": "Wasmachine",
+        "vermogen": 171.23,
+        "image": "images/Wasmachine.jpg",
+        "code": "WA"
+    },
+    {
+        "naam": "Koffie apparaat",
+        "vermogen": 50,
+        "image": "images/Koffie-machine.png",
+        "code": "KA"
+    }
+] 
