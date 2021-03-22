@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatuur met SVG weergeven</title>
+    <style>
+        body {
+            background-color: gray; color: white; text-align: center;
+        }
+        .temp {
+            font-size: .5rem;
+            font-family: 'Courier New', Courier, monospace;
+            fill: white;
+        }
+        #eenheid {
+            font-size: .3rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Temperatuur met SVG weergeven</h1>
+    <p>Een donut-chart vanaf scratch</p>
+    <svg width="100%" height="100%" viewBox="0 0 42 42">
+        <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="rgba(200,200,200,0.5)" stroke-width="1"></circle>
+        <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="royalblue" stroke-width="1" stroke-dasharray="75 25" stroke-dashoffset="75" id="cirkelBoog"></circle>
+        <g class="temp">
+            <text id="temperatuur" x="30%" y="54%">19</text>
+            <text id="eenheid" x="52%" y="50%">&deg;C</text>
+        </g>
+
+    </svg>
+    <input type="range" min="1" max="30" step="1" value="18" id="thermostaat">
+    <script>
+        let temperatuur = 9;
+        const temperatuurUitvoer = document.getElementById('temperatuur');
+        const cirkelBoog         = document.getElementById('cirkelBoog');
+        const thermostaat        = document.getElementById('thermostaat');
+
+        //temperatuur = thermostaat.value;
+      
+        const uitvoeren = (temp) => {
+            temperatuurUitvoer.innerHTML = temp;
+            let boog = temp * 100/31;
+            cirkelBoog.style.strokeDasharray = `${boog} ${100 - boog}`;
+        }
+         const animeerUitvoer = (temp) => {
+             let t = 0;
+             const timer = setInterval( () => {
+                 if(t <= temp) {
+                     uitvoeren(t);
+                     t++;
+                 } else {
+                     clearInterval(timer);
+                 }
+             }, 25)
+         }
+
+        animeerUitvoer(thermostaat.value)
+
+        thermostaat.addEventListener('change', () => {
+            animeerUitvoer(thermostaat.value);
+        })
+
+    </script>
+</body>
+</html>
