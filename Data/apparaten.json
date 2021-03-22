@@ -1,9 +1,9 @@
 [
     {
-        "naam": "Smartphone",
+        "naam": "Apparaat",
         "vermogen": 6.9,
         "image": "images/smartphone.jpg",
-        "code": "PHO"
+        "code": "TE"
     },
     {
         "naam": "Televisie",

@@ -4,7 +4,7 @@ let apparaten = [];
 // Deze functie is de start
 const startCalculator = () => {
   // Inladen van JSON bestand
-  laadJSON("apparaten.json");
+  laadJSON("/Data/apparaten.json");
 };
 
 const laadJSON = (url) => {
@@ -101,7 +101,7 @@ const updateGegevens = (data) => {
   const apparaatDiv = data.container;
 
   // De afzonderlijke elementen ophalen
-  const titel = apparaatDiv.querySelector("h1");
+  const titel = apparaatDiv.querySelector("div");
   const nummer = apparaatDiv.querySelector("h2");
   const slider = apparaatDiv.querySelector("input");
 

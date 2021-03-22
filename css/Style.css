@@ -95,11 +95,11 @@ body{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     background-size: 120px;
     background-repeat: no-repeat;
     background-position: 10px center; 
-    
+    margin-left: 20px;
 }
 
 .button {
@@ -112,7 +112,7 @@ body{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
+    margin: 4px 25px;
     cursor: pointer;
 }
 
