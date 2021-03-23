@@ -11,7 +11,7 @@
 <body>    
     <div id="dashboard">
         <div class="item Header"><img src="/Logo/Duurzaamhuislogo.png" alt="" style="height: 175px; padding-top: 20px;"></div>
-        <div class="item Temperatuur">Temperatuur
+        <div class="item Temperatuur">
             <svg width="150px" height="150px" viewBox="0 0 42 42">
                 <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="rgba(200,200,200,0.5)" stroke-width="1"></circle>
                 <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="royalblue" stroke-width="1" stroke-dasharray="75 25" stroke-dashoffset="75" id="cirkelBoog"></circle>
@@ -20,8 +20,8 @@
                     <text id="eenheid" x="52%" y="50%">&deg;C</text>
                 </g>
         
-            </svg>
-            <input type="range" min="1" max="30" step="1" value="18" id="thermostaat">
+            </svg><br>
+            <input type="range" min="1" max="30" step="1" value="18" class="slider" id="thermostaat">
             <script>
                 let temperatuur = 9;
                 const temperatuurUitvoer = document.getElementById('temperatuur');

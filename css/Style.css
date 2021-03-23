@@ -17,7 +17,7 @@ body{
                         "Temperatuur   Licht         Water         Water"
                         "Elektriciteit Elektriciteit Gas           Gas"
                         "Elektriciteit Elektriciteit Gas           Gas";
-    min-height: 97vh;
+    min-height: 85vh;
 }
 
 .item{
@@ -117,14 +117,14 @@ body{
 }
 
 .slidecontainer {
-    width: 100%;
+    width: 80%;
   }
   
   .slider {
     -webkit-appearance: none;
     /* width: 100%; */
-    height: 25px;
-    background: #d3d3d3;
+    height: 15px;
+    background: #ffffff;
     outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
@@ -133,15 +133,17 @@ body{
   
   .slider:hover {
     opacity: 1;
+    cursor: grab;
+    background-color: rgb(206, 204, 204);
   }
   
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 25px;
-    height: 25px;
-    background: #000000;
-    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: #00b7ff;
+    cursor: grabbing;
   }
   
   .slider::-moz-range-thumb {
@@ -151,9 +153,6 @@ body{
     cursor: pointer;
   }
 
-  body {
-    background-color: gray; color: white; text-align: center;
-}
 .temp {
     font-size: .5rem;
     font-family: 'Courier New', Courier, monospace;
