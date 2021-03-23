@@ -17,7 +17,7 @@ body{
                         "Temperatuur   Licht         Water         Water"
                         "Elektriciteit Elektriciteit Gas           Gas"
                         "Elektriciteit Elektriciteit Gas           Gas";
-    min-height: 85vh;
+    min-height: 97vh;
 }
 
 .item{
