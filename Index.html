@@ -11,7 +11,9 @@
 <body>    
     <div id="dashboard">
         <div class="item Header"><img src="/Logo/Duurzaamhuislogo.png" alt="" style="height: 175px; padding-top: 20px;"></div>
+        
         <div class="item Temperatuur">
+            <div>Thermostaat</div>
             <svg width="150px" height="150px" viewBox="0 0 42 42">
                 <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="rgba(200,200,200,0.5)" stroke-width="1"></circle>
                 <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="royalblue" stroke-width="1" stroke-dasharray="75 25" stroke-dashoffset="75" id="cirkelBoog"></circle>
@@ -19,9 +21,10 @@
                     <text id="temperatuur" x="30%" y="54%">19</text>
                     <text id="eenheid" x="52%" y="50%">&deg;C</text>
                 </g>
-        
+                
             </svg><br>
             <input type="range" min="1" max="30" step="1" value="18" class="slider" id="thermostaat">
+            
             <script>
                 let temperatuur = 9;
                 const temperatuurUitvoer = document.getElementById('temperatuur');
@@ -55,18 +58,29 @@
         
             </script>
         </div>
-        <div class="item Licht">Licht<br><br><br><br><br></div>
-        <div class="item Water">Water<br><br><br><br><br></div>
-        <div class="item Gas">Gas<br><br><br><br><br></div>
+        <div class="item Licht">Licht</div>
+        <div class="item Water">Water</div>
+        <div class="item Gas">Gas</div>
+        
         <div class="item Elektriciteit">
-            <div class="apparaat" data-id="TE">
-                <div>Apparaat</div>
+            
+            <div class="apparaat" data-id="KA">
+                <div>Koffie apparaat</div>
                 <div>
                     <p>minuten per dag: <span>0</span></p>
                     <input type="range" min="0" max="240" step="10" value="15" class="slider" id="myRange"/>
                 </div>
                 <h2>Verbruik of kosten</h2>
                 <button class="button">Toon verbruik</button>
+
+                <div class="apparaat" data-id="WA">
+                    <div>Koffie apparaat</div>
+                    <div>
+                        <p>minuten per dag: <span>0</span></p>
+                        <input type="range" min="0" max="240" step="10" value="15" class="slider" id="myRange"/>
+                    </div>
+                    <h2>Verbruik of kosten</h2>
+                    <button class="button">Toon verbruik</button>
             </div>
         </div>
     </div>
