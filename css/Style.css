@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background: linear-gradient(
         to right top,
@@ -9,14 +14,14 @@ body{
 
 #dashboard{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     margin: 11px;
-    grid-template-areas:"Header        Header        Header        Header"
-                        "Temperatuur   Licht         Water         Water"
-                        "Temperatuur   Licht         Water         Water"
-                        "Elektriciteit Elektriciteit Gas           Gas"
-                        "Elektriciteit Elektriciteit Gas           Gas";
+    grid-template-areas:"nav    Header        Header        Header        Header"
+                        "nav    Temperatuur   Licht         Water         Water"
+                        "nav    Temperatuur   Licht         Water         Water"
+                        "nav    Elektriciteit Elektriciteit Gas           Gas"
+                        "nav    Elektriciteit Elektriciteit Gas           Gas";
     min-height: 97vh;
 }
 
@@ -63,15 +68,76 @@ body{
     border-radius: 2rem;
 }
 
-@media screen and (max-width: 830px){
+.nav {
+    grid-area: nav;
+    border-radius: 2rem;
+}
+
+#sidebar {
+    visibility: hidden;
+    position: absolute;
+}
+
+@media screen and (max-width: 1250px){
     #dashboard{
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas:"Header        Header        Header  Header"
-                            "Temperatuur   Temperatuur   Licht   Licht"
-                            "Temperatuur   Temperatuur   Licht   Licht"
-                            "Water         Water         Water      Water"
+        grid-template-areas:"Header        Header        Header        Header"
+                            "Temperatuur   Temperatuur   Licht         Licht"
+                            "Temperatuur   Temperatuur   Licht         Licht"
+                            "Water         Water         Water         Water"
                             "Elektriciteit Elektriciteit Elektriciteit Elektriciteit"
                             "Gas           Gas           Gas           Gas";
+    }
+
+    .nav {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    #sidebar {
+        position: absolute;
+        visibility: visible;
+        width: 300px;
+        /* height: 100%; */
+        bottom: 0;
+        top: 0;
+        /* background: blue; */
+        left: -310px;
+        transition: .4s;
+        border-radius: 2rem;
+        background-color: white;
+        border: 2px solid black;
+        background: linear-gradient(
+            to right top,
+            #f1f1f1,
+            #56ddf1);
+            color: rgb(0, 0, 0);
+        box-shadow: 0 0 8px #000;
+    }
+
+    #sidebar.active {
+        left: 0;
+    }
+
+    #sidebar ul li {
+        list-style: none;
+        color: #FFF;
+        font-size: 20px;
+        padding: 20px 24px;
+    }
+
+    #sidebar .toggle-btn {
+        position: absolute;
+        top: 30px;
+        left: 330px;
+    }
+
+    .toggle-btn span {
+        width: 45px;
+        height: 4px;
+        background: black;
+        display: block;
+        margin-top: 4px;
     }
    
 }
