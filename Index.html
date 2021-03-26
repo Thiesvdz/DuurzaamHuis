@@ -24,7 +24,7 @@
                 
             </svg><br>
             <input type="range" min="1" max="30" step="1" value="18" class="slider" id="thermostaat">
-            
+            <div>Temperatuur binnen aanpassen</div>
             <script>
                 let temperatuur = 9;
                 const temperatuurUitvoer = document.getElementById('temperatuur');
@@ -58,7 +58,24 @@
         
             </script>
         </div>
-        <div class="item Licht">Licht</div>
+        <div class="item Licht">Licht
+            <label class="switch">
+                <input type="checkbox">
+                <div class="switch-btn"></div>
+            </label>     
+            <label class="switch">
+                <input type="checkbox">
+                <div class="switch-btn"></div>
+            </label>     
+            <label class="switch">
+                <input type="checkbox">
+                <div class="switch-btn"></div>
+            </label>     
+            <label class="switch">
+                <input type="checkbox">
+                <div class="switch-btn"></div>
+            </label>     
+        </div>
         <div class="item Water">Water</div>
         <div class="item Gas">Gas</div>
         
@@ -69,7 +86,7 @@
                 <div>
                     <p>minuten per dag: <span>0</span></p>
                     <input type="range" min="0" max="240" step="10" value="15" class="slider" id="myRange"/>
-                </div>
+                </div> 
                 <h2>Verbruik of kosten</h2>
                 <button class="button">Toon verbruik</button>
             </div>
