@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Style.css">
     <script src="/Data/js/apparaten.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet">
     <title>Duurzaam osso niffo</title>
     <script src="js/script.js"></script>
 </head>
@@ -59,31 +60,39 @@
         
             </script>
         </div>
-        <div class="item Licht">Licht
-            <label class="switch">
-                <input type="checkbox">
-                <div class="switch-btn"></div>
-            </label>     
-            <label class="switch">
-                <input type="checkbox">
-                <div class="switch-btn"></div>
-            </label>     
-            <label class="switch">
-                <input type="checkbox">
-                <div class="switch-btn"></div>
-            </label>     
-            <label class="switch">
-                <input type="checkbox">
-                <div class="switch-btn"></div>
-            </label>     
-        </div>
+            <div class="item Licht">Licht
+                <label class="switch">
+                    <input type="checkbox">
+                    <div class="switch-btn"></div>
+                </label>     
+                <label class="switch">
+                    <input type="checkbox">
+                    <div class="switch-btn"></div>
+                </label>     
+                <label class="switch">
+                    <input type="checkbox">
+                    <div class="switch-btn"></div>
+                </label>     
+                <label class="switch">
+                    <input type="checkbox">
+                    <div class="switch-btn"></div>
+                </label>     
+            </div>
         <div class="item Water">Water</div>
         <div class="item Gas">Gas</div>
         
         <div class="item Elektriciteit">
-            
             <div class="apparaat" data-id="KA">
-                <div>Huis apparaten</div>
+                <div id="huisapparaattekst">Huis apparaten</div>
+                <div>
+                    <p>minuten per dag: <span>0</span></p>
+                    <input type="range" min="0" max="240" step="10" value="15" class="slider" id="myRange"/>
+                </div> 
+                <h2>Verbruik of kosten</h2>
+                <button class="button">Toon verbruik</button>
+            </div>
+            <div class="apparaat" data-id="WA">
+                <div id="wasmachinetekst"></div>
                 <div>
                     <p>minuten per dag: <span>0</span></p>
                     <input type="range" min="0" max="240" step="10" value="15" class="slider" id="myRange"/>
@@ -92,9 +101,13 @@
                 <button class="button">Toon verbruik</button>
             </div>
         </div>
-
         <div class="item nav">
-
+            <ul>
+                <li><a href="">Home page</a></li>
+                <li><a href="">Over ons</a></li>
+                <li><a href="/tips.html">Tips voor duurzaamheid</a></li>
+                <li><a href="https://www.facebook.com/mrvernez.mrvernez">Facebook</a></li>
+            </ul>
         </div>
         <div id="sidebar">
             <div class="toggle-btn "onclick="show()">
@@ -102,12 +115,11 @@
                 <span></span>
                 <span></span>
             </div>
-
             <ul>
-                <li>Home</li>
-                <li>Work</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li><a href="">Home page</a></li>
+                <li><a href="">Over ons</a></li>
+                <li><a href="/tips.html">Tips voor duurzaamheid</a></li>
+                <li><a href="https://www.facebook.com/mrvernez.mrvernez">Facebook</a></li>
             </ul>
         </div>
 

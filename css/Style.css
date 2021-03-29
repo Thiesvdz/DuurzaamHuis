@@ -8,7 +8,7 @@ body{
         to right top,
          #5ef7db,
          #6cdbeb);
-    font-family: 'Ranchers', cursive;
+    font-family: 'Volkhov', serif;
     font-size: x-large;
 }
 
@@ -77,6 +77,32 @@ body{
     visibility: hidden;
     position: absolute;
 }
+
+.nav ul li{
+    list-style: none;
+    margin: 20px
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(0, 153, 255);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: rgb(255, 0, 0);
+    background-color: transparent;
+    text-decoration: underline;
+  }
 
 @media screen and (max-width: 1250px){
     #dashboard{
@@ -160,25 +186,31 @@ body{
     padding: 10px;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     background-size: 120px;
     background-repeat: no-repeat;
     background-position: 10px center; 
-    margin-left: 20px;
+    margin-left: 40px;
 }
-
+#huisapparaattekst{
+    margin-left: 20px;
+    margin-top: 25px
+}
+#wasmachinetekst{
+    margin-left: 20px;
+    margin-top: 30px
+}
 .button {
-    background-color: #000000;
+    background-color: #fc4040;
     border: none;
-    color: white;
-    font-family: 'Chango', cursive;
+    color: rgb(255, 255, 255);
     font-size: 20px;
-    padding: 15px 32px;
+    padding: 5px 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 25px;
+    margin: 40px 45px;
     cursor: pointer;
 }
 
@@ -240,6 +272,8 @@ body{
     cursor: pointer;
     border-radius: 20px;
     box-shadow: inset 0 8px 10px rgba(0,0,0,0.3);
+    margin-top: 20px;
+    margin-left: 30px;
 }
 
 .switch-btn::before{
