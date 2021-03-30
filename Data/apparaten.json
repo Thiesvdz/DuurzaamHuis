@@ -13,7 +13,7 @@
     },
     {
         "naam": "Wasmachine",
-        "vermogen": 171.23,
+        "vermogen": 5,
         "image": "images/Wasmachine.jpg",
         "code": "WA"
     },
