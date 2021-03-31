@@ -73,7 +73,8 @@ body{
     grid-area: Elektriciteit;
     border-radius: 2rem;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav {
@@ -307,3 +308,19 @@ input[type=checkbox]:checked +
     background-color: rgb(54, 224, 2);
 }
 
+@media screen and (max-width: 505px){
+    .Elektriciteit{
+        grid-area: Elektriciteit;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+  }
+@media screen and (min-width: 1980px){
+  .Elektriciteit {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+}
