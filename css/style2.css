@@ -159,6 +159,13 @@ body{
     margin-left: 20px;
 }
 
+#tips ul li {
+    text-align: center;
+    font-size: 18px;
+    list-style: none;
+    
+  }
+
 .nav ul li{
     list-style: none;
     margin: 20px
