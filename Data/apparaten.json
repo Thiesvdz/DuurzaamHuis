@@ -14,13 +14,13 @@
     {
         "naam": "Wasmachine",
         "vermogen": 5,
-        "image": "images/Wasmachine.jpg",
+        "image": "",
         "code": "WA"
     },
     {
         "naam": "Huis apparaten",
         "vermogen": 50,
-        "image": "images/Koffie-machine.png",
+        "image": "",
         "code": "KA"
     }
-] 
+]

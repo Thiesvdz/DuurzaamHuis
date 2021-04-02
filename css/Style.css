@@ -61,8 +61,12 @@ body{
 }
 
 .lichtknoppen{
-    padding-left: 26px;
-
+    display: inline-flexbox;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 28px;
+    margin-left: 28px;
+    
 }
 
 .Water{
@@ -204,14 +208,6 @@ a:link {
 }
 
 
-/* #huisapparaattekst{
-    margin-left: 20px;
-    margin-top: 25px
-}
-#wasmachinetekst{
-    margin-left: 20px;
-    margin-top: 30px
-} */
 .button {
     background-color: #fc4040;
     border: none;
@@ -323,4 +319,19 @@ input[type=checkbox]:checked +
     align-items: center;
     justify-content: center;
    }
+}
+
+
+#grafiek {
+    background-color: #ffffff;
+    border: 2px dotted #333333;
+    width: 400px;
+    height: 250px;
+    color: rgb(0, 17, 255);
+}
+.grafiekg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }

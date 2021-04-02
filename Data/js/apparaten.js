@@ -15,9 +15,9 @@ const laadJSON = (url) => {
   aanvraag.onreadystatechange = () => {
     if (aanvraag.readyState === 4 && aanvraag.status === 200) {
       let jsonText = aanvraag.responseText;
-      console.log(jsonText);
+      // console.log(jsonText);
       apparaten = JSON.parse(jsonText);
-      console.log(apparaten);
+      // console.log(apparaten);
       toonApparaten();
       // HIER KOMT CODE DIE UITGELEGD WORDT IN DE VIDEO
     }
@@ -39,7 +39,7 @@ const toonApparaten = () => {
 apparaatDivs.forEach((apparaatDiv) => {
     // Haal de code van het apparaat op uit het attribuut "data-id"
     const code = apparaatDiv.attributes["data-id"].value;
-    console.log(code);
+    // console.log(code);
 
     // Zoek met deze het appraat op in de ingeladen appraten (uit het JSON bestand)
     const apparaat = apparaten.find((value) => {
@@ -54,7 +54,7 @@ apparaatDivs.forEach((apparaatDiv) => {
         prijs_Kwh: 0.20
     };
 
-    console.log(data);
+    // console.log(data);
 
     // Geef het data object aan de maakWidget function.
     maakWidget(data);
