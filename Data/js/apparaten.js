@@ -140,5 +140,7 @@ const berekenJaarKosten = (minuten_per_dag, vermogen) => {
   return price.toFixed(2);
 };
 
+// const laadJSON = (url) => 
+
 //Hier begint alles.
 window.addEventListener("DOMContentLoaded", startCalculator);

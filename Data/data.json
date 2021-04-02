@@ -1,5 +1,4 @@
 {
-    "labels": ["maart", "april", "mei", "juni"],
-    "series": [
-        [20, 30, 40, 50]]
+    "labels": ["maart", "april", "mei", "juni","juli","augustus","september"],
+    "series": [[2000,2431, 2881, 3102,3463,3821,4234]]
   }
