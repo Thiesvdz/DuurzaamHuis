@@ -22,7 +22,7 @@
         <div class="item Header"><img src="/Logo/Duurzaamhuislogo.png" alt="" style="height: 175px; padding-top: 20px;"></div>
         
         <div class="item Temperatuur">
-            <div>Thermostaat</div>
+            <div id="thermokop">Thermostaat</div>
             <svg width="150px" height="150px" viewBox="0 0 42 42">
                 <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="rgba(200,200,200,0.5)" stroke-width="1"></circle>
                 <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="royalblue" stroke-width="1" stroke-dasharray="75 25" stroke-dashoffset="75" id="cirkelBoog"></circle>
@@ -67,11 +67,14 @@
         
             </script>
         </div>
-            <div class="item Licht">Licht
+            <div class="item Licht"><div id="lichtkop">Licht</div> 
                 <div class="lichtknoppen">
                     <label class="switch">
                         <input type="checkbox">
                         <div class="switch-btn"></div>
+                        <div class="lampen">
+                        <img src="/Images/lamp-uit.png" alt="lamp-uit" id="lamp-uit" onclick="change();"> 
+                        </div> 
                     </label>     
                     <label class="switch">
                         <input type="checkbox">
@@ -81,10 +84,11 @@
                         <input type="checkbox">
                         <div class="switch-btn"></div>
                     </label>
-                </div>        
+                </div>
+                  
             </div>
         <div class="item Water">
-             Verbruik water per dag in liter: 
+            <div id="waterkop">Verbruik water per dag in liter:</div> 
             <div class="grafiekg">
                 <div id="grafiek">
                    
@@ -92,7 +96,7 @@
             </div>
         </div>
         <div class="item Gas">
-            Verbruik gas per dag in m3:
+            <div id="gaskop">Verbruik gas per dag in M3:</div> 
             <div class="grafiekg">
                 <div id="grafiek1">
                     

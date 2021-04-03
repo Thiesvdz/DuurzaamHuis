@@ -55,6 +55,10 @@ body{
     grid-area: Temperatuur;
     border-radius: 2rem;
 }
+
+#thermokop,#lichtkop, #waterkop,#gaskop{
+    margin-top: 20px;
+}
 .Licht{
     grid-area: Licht;
     border-radius: 2rem;
@@ -337,4 +341,18 @@ input[type=checkbox]:checked +
     align-items: center;
     justify-content: center;
     margin: 10px 10px 20px 10px;
+}
+
+
+.lampen{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    
+}
+
+#lamp-uit{
+    width: 80px;
+    height: 80px;
+    
 }
