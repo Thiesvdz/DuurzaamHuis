@@ -4,6 +4,7 @@ session_start();
 ?>
 </HEAD>
 <BODY>   
+
 <?php
     $gebruikersnaam = $_POST['user'];
     $wachtwoord = $_POST['pass'];
@@ -47,7 +48,6 @@ session_start();
         
     }
 ?>
-
 
 </BODY>
 </HTML>
