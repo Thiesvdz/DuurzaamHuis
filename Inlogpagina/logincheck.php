@@ -40,7 +40,7 @@ session_start();
     {
        echo "Je bent ingelogd<hr>";
        $_SESSION['username'] = $gebruikersnaam;
-       echo "Klik <a href ='../index.html'>hier</a> om naar de volgende beveiligde site te gaan";       
+       echo "Klik <a href ='../main.html'>hier</a> om naar de volgende beveiligde site te gaan";       
     }
     else
     {

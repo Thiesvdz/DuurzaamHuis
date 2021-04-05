@@ -9,16 +9,16 @@
       <p>Heeft u nog geen account?</p>
       <p>Klik dan <a href="signup.html">hier</a> om een account te maken.</p>
     </div>
-    <form action="/Index.html" method="POST" class="signupForm" name="signupform">
+    <form action="logincheck.php" method="POST" class="signupForm" name="signupform">
       <h2>Log in</h2>
       <ul class="noBullet">
         <li>
           <label for="username"></label>
-          <input type="text" class="inputFields" id="username" name="username" placeholder="Gebruikersnaam" value="" oninput="return userNameValidation(this.value)" required/>
+          <input type="text" class="inputFields" id="username" name="user" placeholder="Gebruikersnaam" value="" oninput="return userNameValidation(this.value)" required/>
         </li>
         <li>
           <label for="password"></label>
-          <input type="password" class="inputFields" id="password" name="password" placeholder="Wachtwoord" value="" oninput="return passwordValidation(this.value)" required/>
+          <input type="password" class="inputFields" id="password" name="pass" placeholder="Wachtwoord" value="" oninput="return passwordValidation(this.value)" required/>
         </li>
         <li>
           <label for="email"></label>

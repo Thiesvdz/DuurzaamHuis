@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/Style.css">
-    <script src="/Data/js/apparaten.js"></script>
+    <script src="Data/js/apparaten.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
 </head>
 <body>    
     <div id="dashboard">
-        <div class="item Header"><img src="/Logo/Duurzaamhuislogo.png" alt="" style="height: 175px; padding-top: 20px;"></div>
+        <div class="item Header"><img src="Logo/Duurzaamhuislogo.png" alt="" style="height: 175px; padding-top: 20px;"></div>
         
         <div class="item Temperatuur">
             <div id="thermokop">Thermostaat</div>
@@ -35,12 +35,11 @@
             <input type="range" min="1" max="30" step="1" value="18" class="slider" id="thermostaat">
             <div style="font-size: 20px;">Temperatuur binnen aanpassen</div>
             <script>
+                
                 let temperatuur = 9;
                 const temperatuurUitvoer = document.getElementById('temperatuur');
                 const cirkelBoog         = document.getElementById('cirkelBoog');
                 const thermostaat        = document.getElementById('thermostaat');
-        
-                //temperatuur = thermostaat.value;
               
                 const uitvoeren = (temp) => {
                     temperatuurUitvoer.innerHTML = temp;
@@ -73,7 +72,7 @@
                         <input type="checkbox">
                         <div class="switch-btn"></div>
                         <div class="lampen">
-                        <img src="/Images/lamp-uit.png" alt="lamp-uit" id="lamp-uit" onclick="change();"> 
+                        <!-- <img src="Images/lamp-uit.png" alt="lamp-uit" id="lamp-uit" onclick="change();">  -->
                         </div> 
                     </label>     
                     <label class="switch">
@@ -104,9 +103,10 @@
             </div>
         </div>
         
+        
         <div class="item Elektriciteit">
             <div class="apparaat" data-id="KA">
-                <div id="huisapparaattekst">Huis apparaten</div>
+                <div id="huisapparaattekst">Woonkamer apperatuur</div>
                 <div>
                     <p>minuten per dag: <span>0</span></p>
                     <input type="range" min="0" max="240" step="10" value="15" class="slider" id="myRange"/>
@@ -115,7 +115,7 @@
                 <button class="button">Toon verbruik</button>
             </div>
             <div class="apparaat" data-id="WA">
-                <div id="wasmachinetekst"></div>
+                <div id="wasmachinetekst">Woonkamer apperatuur</div>
                 <div>
                     <p>minuten per dag: <span>0</span></p>
                     <input type="range" min="0" max="240" step="10" value="15" class="slider" id="myRange"/>
@@ -126,10 +126,9 @@
         </div>
         <div class="item nav">
             <ul>
-                <li><a href="">Home page</a></li>
+                <li><a href="main.html">Home page</a></li>
                 <li><a href="overonspage.html">Over ons</a></li>
-                <li><a href="/tips.html">Tips voor duurzaamheid</a></li>
-                <!-- <li><a href="">Facebook</a></li> -->
+                <li><a href="tips.html">Tips voor duurzaamheid</a></li>
             </ul>
         </div>
         <div id="sidebar">
@@ -139,10 +138,9 @@
                 <span></span>
             </div>
             <ul>
-                <li><a href="Index.html">Home page</a></li>
+                <li><a href="main.html">Home page</a></li>
                 <li><a href="overonspage.html">Over ons</a></li>
-                <li><a href="/tips.html">Tips voor duurzaamheid</a></li>
-                <!-- <li><a href="">Facebook</a></li> -->
+                <li><a href="tips.html">Tips voor duurzaamheid</a></li>
             </ul>
         </div>
     </div>

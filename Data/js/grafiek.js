@@ -5,7 +5,7 @@ const startGrafiek = () => {
 const maakGrafiek = () => {
     // Hier gaan we de chart maken
     new Chartist.Bar('#grafiek', {
-    "labels": ["Maandag", "Dinsdag", "Woensdag", "Donderdag","Vrijdag","Zaterdag","Zondag"],
+    "labels": ["Ma", "Di", "Woe", "Do","Vr","Za","Zo"],
     "series": [[2000,2431, 2881, 3102,3463,3821,4234]]
   });
 }
@@ -21,7 +21,7 @@ const startGrafiek1 = () => {
 const maakGrafiek1 = () => {
   // Hier gaan we de chart maken
   new Chartist.Line('#grafiek1', {
-  "labels": ["Maandag", "Dinsdag", "Woensdag", "Donderdag","Vrijdag","Zaterdag","Zondag"],
+    "labels": ["Ma", "Di", "Woe", "Do","Vr","Za","Zo"],
   "series": [[23.2,27.9,32.1 ,36 ,39.7,44.9,49.3]]
 });
 }

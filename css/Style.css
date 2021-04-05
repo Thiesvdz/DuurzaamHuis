@@ -59,6 +59,7 @@ body{
 #thermokop,#lichtkop, #waterkop,#gaskop{
     margin-top: 20px;
 }
+
 .Licht{
     grid-area: Licht;
     border-radius: 2rem;
@@ -131,6 +132,9 @@ a:link {
                             "Elektriciteit Elektriciteit Elektriciteit Elektriciteit"
                             "Gas           Gas           Gas           Gas";
     }
+    .lichtknoppen{
+        margin-bottom: 60px;
+    }
 
     .nav {
         position: absolute;
@@ -197,6 +201,7 @@ a:link {
         border: 2px solid rgb(0, 0, 0);
         box-shadow: 0 0 8px #000;
     }
+   
 }
 
 .apparaat {

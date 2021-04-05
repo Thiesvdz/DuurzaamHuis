@@ -1,25 +1,13 @@
 [
     {
-        "naam": "Apparaten",
-        "vermogen": 6.9,
-        "image": "images/smartphone.jpg",
-        "code": "TE"
-    },
-    {
-        "naam": "Televisie",
-        "vermogen": 10,
-        "image": "images/1990-tv.jpg",
-        "code": "TV"
-    },
-    {
-        "naam": "Wasmachine",
-        "vermogen": 5,
+        "naam": "Woonkamer apperatuur",
+        "vermogen": 4,
         "image": "",
         "code": "WA"
     },
     {
-        "naam": "Huis apparaten",
-        "vermogen": 50,
+        "naam": "Keuken apperatuur",
+        "vermogen": 6,
         "image": "",
         "code": "KA"
     }

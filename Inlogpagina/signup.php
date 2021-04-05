@@ -33,10 +33,10 @@
         $hash = password_hash($password1, PASSWORD_DEFAULT);
         $sql = "INSERT INTO users (id, username, password, voornaam, achternaam, email) VALUES (NULL, '$username', '$hash', '$voornaam', '$achternaam', '$email')";
         $result = $mysqli -> query($sql);
-        echo "Je hebt succesvol een account aangemaakt, ga naar <a href='login.html'>de loginpagina</a> om je aan te melden";
+        echo "Je hebt succesvol een account aangemaakt, ga naar <a href='form.html'>de loginpagina</a> om je aan te melden";
     } 
 
-
+ 
 
     ?>
 </body>
