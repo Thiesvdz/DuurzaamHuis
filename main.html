@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet">
 
     <title>Duurzaam Huis home page</title>
-    <script src="js/script.js"></script>    
+      
+    <link rel="shortcut icon" href="#">
 
     <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
@@ -33,7 +34,7 @@
                 
             </svg><br>
             <input type="range" min="1" max="30" step="1" value="18" class="slider" id="thermostaat">
-            <div style="font-size: 20px;">Temperatuur binnen aanpassen</div>
+            <p class="lichttekst" style="margin-top: 38px;">Hier kunt u uw temperatuur aanpassen</p>
             <script>
                 
                 let temperatuur = 9;
@@ -70,19 +71,24 @@
                 <div class="lichtknoppen">
                     <label class="switch">
                         <input type="checkbox">
-                        <div class="switch-btn"></div>
+                        <div class="switch-btn" id="lichtbtn"></div>
+                        <div class="lampen"><img src="Images/lamp-uit.png" alt="lamp-uit" id="lamp-uit"></div> 
+                    </label>     
+                    <label class="switch">
+                        <input type="checkbox">
+                        <div class="switch-btn" id="lichtbtn2"></div>
                         <div class="lampen">
-                        <!-- <img src="Images/lamp-uit.png" alt="lamp-uit" id="lamp-uit" onclick="change();">  -->
-                        </div> 
+                            <img src="Images/lamp-uit.png" alt="lamp-uit" id="lamp-uit2">
+                        </div>
                     </label>     
                     <label class="switch">
                         <input type="checkbox">
-                        <div class="switch-btn"></div>
-                    </label>     
-                    <label class="switch">
-                        <input type="checkbox">
-                        <div class="switch-btn"></div>
+                        <div class="switch-btn" id="lichtbtn3"></div>
+                        <div class="lampen">
+                            <img src="Images/lamp-uit.png" alt="lamp-uit" id="lamp-uit3"> 
+                        </div>
                     </label>
+                    <p class="lichttekst" style="margin-top: 15px;">Hier kunt u uw lichten aan/uit zetten</p>
                 </div>
                   
             </div>
@@ -144,5 +150,6 @@
             </ul>
         </div>
     </div>
+    <script src="js/script.js"></script>  
 </body>
 </html>

@@ -65,14 +65,10 @@ body{
     border-radius: 2rem;
 }
 
-.lichtknoppen{
-    display: inline-flexbox;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-top: 28px;
+ .lichtknoppen{
     margin-left: 28px;
     
-}
+} 
 
 .Water{
     grid-area: Water;
@@ -132,10 +128,9 @@ a:link {
                             "Elektriciteit Elektriciteit Elektriciteit Elektriciteit"
                             "Gas           Gas           Gas           Gas";
     }
-    .lichtknoppen{
-        margin-bottom: 60px;
+    .lichttekst{
+        margin-top: 15px;
     }
-
     .nav {
         position: absolute;
         visibility: hidden;
@@ -186,7 +181,14 @@ a:link {
         display: block;
         margin-top: 4px;
     }
-   
+   .lichttekst{
+      margin-bottom: 25px;
+      margin-top: 25px;
+
+    }
+    .apparaat{
+        margin-top: 35px;
+    }
 }
 
 
@@ -202,6 +204,24 @@ a:link {
         box-shadow: 0 0 8px #000;
     }
    
+}
+
+@media screen and (max-width: 505px){
+    .Elektriciteit{
+        grid-area: Elektriciteit;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+  }
+@media screen and (min-width: 1980px){
+  .Elektriciteit {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
 }
 
 .apparaat {
@@ -283,6 +303,7 @@ a:link {
 .switch-btn{
     width: 80px;
     height: 40px;
+    margin-top: -10px;
     background: #e5e5e5;
     position: relative;
     cursor: pointer;
@@ -313,22 +334,7 @@ input[type=checkbox]:checked +
     background-color: rgb(54, 224, 2);
 }
 
-@media screen and (max-width: 505px){
-    .Elektriciteit{
-        grid-area: Elektriciteit;
-        border-radius: 2rem;
-        display: flex;
-        flex-direction: column;
-    }
-  }
-@media screen and (min-width: 1980px){
-  .Elektriciteit {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   }
-}
+
 
 
 #grafiek, #grafiek1 {
@@ -348,16 +354,16 @@ input[type=checkbox]:checked +
     margin: 10px 10px 20px 10px;
 }
 
-
 .lampen{
     display: flex;
-    align-items: baseline;
     justify-content: flex-end;
+    margin-right: 30px;
     
 }
-
-#lamp-uit{
-    width: 80px;
-    height: 80px;
-    
+#lamp-uit, #lamp-uit2, #lamp-uit3{
+    width: 60px;
+    height: 60px;
+    cursor: not-allowed;
+    margin-top: -50px;
+    margin-left: -40px;
 }
