@@ -1,10 +1,17 @@
+<html>
 <head>
-    <link rel="stylesheet" href="css/formstyle.css">i
+    <link rel="stylesheet" href="../css/inlog.css">
+<?php
+session_start();
+unset($_SESSION['username']);
+?>
 </head>
+<body>
 <div class="signupSection">
     <div class="info">
       <h2>Welkom bij duurzaam huis</h2>
       <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+      <p>U bent uitgelogd</p>
       <p>Hier kunt u inloggen</p><br>
       <p>Heeft u nog geen account?</p>
       <p>Klik dan <a href="signup.html" style="color: aqua;">hier</a> om een account te maken.</p>
@@ -30,3 +37,5 @@
       </ul>
     </form>
   </div>
+</body>
+</html>
