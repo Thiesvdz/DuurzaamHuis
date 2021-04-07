@@ -25,6 +25,12 @@ body{
     min-height: 97vh;
 }
 
+.gebruiker {
+    position: absolute;
+    right: 5%;
+    top: 8%;
+}
+
 .item{
     background-color: white;
     border: 2px solid black;
@@ -44,6 +50,9 @@ body{
     background-color: rgb(255, 255, 255);
     grid-area: Header;
     border-radius: 2rem;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: row; */
 }
 .Gas{
     background-color: rgb(255, 255, 255);

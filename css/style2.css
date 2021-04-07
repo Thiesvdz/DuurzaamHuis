@@ -12,6 +12,12 @@ body{
     font-size: x-large;
 }
 
+.gebruiker {
+    position: absolute;
+    right: 5%;
+    top: 8%;
+}
+
 #dashboard{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

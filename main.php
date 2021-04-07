@@ -29,7 +29,16 @@
 </head>
 <body>    
     <div id="dashboard">
-        <div class="item Header"><img src="Logo/Duurzaamhuislogo.png" alt="" style="height: 175px; padding-top: 20px;"></div>
+        <div class="item Header">
+            <div><img src="Logo/Duurzaamhuislogo.png" alt="" style="height: 175px; padding-top: 20px;"></div>
+            <div class="gebruiker">
+                <?php 
+                echo "Welkom ";
+                echo $_SESSION['username'] . "!"; 
+                ?>
+                <br><a href="Inlogpagina/loguit.php">Uitloggen</a>
+            </div>
+        </div>
         
         <div class="item Temperatuur">
             <div id="thermokop">Thermostaat</div>
@@ -142,9 +151,8 @@
         <div class="item nav">
             <ul>
                 <li><a href="main.php">Home page</a></li>
-                <li><a href="overonspage.html">Over ons</a></li>
-                <li><a href="tips.html">Tips voor duurzaamheid</a></li>
-                <li><a href="Inlogpagina/loguit.php">Uitloggen</a></li>
+                <li><a href="overonspage.php">Over ons</a></li>
+                <li><a href="tips.php">Tips voor duurzaamheid</a></li>
             </ul>
         </div>
         <div id="sidebar">
@@ -155,9 +163,8 @@
             </div>
             <ul>
                 <li><a href="main.php">Home page</a></li>
-                <li><a href="overonspage.html">Over ons</a></li>
-                <li><a href="tips.html">Tips voor duurzaamheid</a></li>
-                <li><a href="Inlogpagina/loguit.php">Uitloggen</a></li>
+                <li><a href="overonspage.php">Over ons</a></li>
+                <li><a href="tips.php">Tips voor duurzaamheid</a></li>
             </ul>
         </div>
     </div>
