@@ -19,7 +19,7 @@
 
     $host = "localhost";
     $user = "root";
-    $pass = "";
+    $pass = "root";
     $db = "flex";
 
     $mysqli = new mysqli($host,$user,$pass,$db);
@@ -35,9 +35,8 @@
         $result = $mysqli -> query($sql);
         echo "Je hebt succesvol een account aangemaakt, ga naar <a href='form.html'>de loginpagina</a> om je aan te melden";
     } 
-
- 
-
+    
     ?>
+
 </body>
 </html>

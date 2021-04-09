@@ -11,7 +11,7 @@ session_start();
 
     $host = "localhost";
     $user = "root";
-    $pass = "";
+    $pass = "root";
     $db = "flex";
 
     $mysqli = new mysqli($host,$user,$pass,$db);
