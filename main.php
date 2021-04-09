@@ -90,23 +90,23 @@
                     <label class="switch">
                         <input type="checkbox">
                         <div class="switch-btn" id="lichtbtn"></div>
-                        <div class="lampen"><img src="Images/lamp-uit.png" alt="lamp-uit" id="lamp-uit"></div> 
+                        <div class="lampen"><img src="Images/LampUit.png" alt="lamp-uit" id="lamp-uit"></div> 
                     </label>     
                     <label class="switch">
                         <input type="checkbox">
                         <div class="switch-btn" id="lichtbtn2"></div>
                         <div class="lampen">
-                            <img src="Images/lamp-uit.png" alt="lamp-uit" id="lamp-uit2">
+                            <img src="Images/LampUit.png" alt="lamp-uit" id="lamp-uit2">
                         </div>
                     </label>     
                     <label class="switch">
                         <input type="checkbox">
                         <div class="switch-btn" id="lichtbtn3"></div>
                         <div class="lampen">
-                            <img src="Images/lamp-uit.png" alt="lamp-uit" id="lamp-uit3"> 
+                            <img src="Images/LampUit.png" alt="lamp-uit" id="lamp-uit3"> 
                         </div>
                     </label>
-                    <p class="lichttekst" style="margin-top: 15px;">Hier kunt u uw lichten aan/uit zetten</p>
+                    <p class="lichttekst" style="margin-top: 15px;">Hier kunt u uw lichten aan & uit zetten</p>
                 </div>
                   
             </div>
