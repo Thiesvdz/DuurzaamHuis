@@ -7,10 +7,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet">
     <title>Duurzaam Huis over ons</title>
     <script src="js/script.js"></script>
+    <?php
+    session_start();
+
+    if(!isset($_SESSION['username']))
+    {
+        echo "Je bent niet ingelogd! Klik <a href='Inlogpagina/form.html'>hier<a> om in te loggen.";
+        exit();
+    }
+    ?>
 </head>
 <body>    
     <div id="dashboard">
-        <div class="item Header"><img src="Logo/Duurzaamhuislogo.png" alt="" style="height: 175px; padding-top: 20px;"></div>
+        <div class="item Header"><img src="Logo/Duurzaamhuislogo.png" alt="" style="height: 175px; padding-top: 20px;">
+        <div class="gebruiker">
+                <?php 
+                echo "Welkom ";
+                echo $_SESSION['username'] . "!"; 
+                ?>
+                <br><a href="Inlogpagina/loguit.php">Uitloggen</a>
+        </div>
+    </div>
         
         <div class="item Informatiepage">
             <h3>Informatiepage</h3>
@@ -44,9 +61,9 @@
 
         <div class="item nav">
             <ul>
-                <li> <a href="main.html">Home page</a> </li>
-                <li> <a href="overonspage.html">Over ons</a> </li>
-                <li> <a href="tips.html">Tips voor duurzaamheid</a></li>
+                <li> <a href="main.php">Home page</a> </li>
+                <li> <a href="overonspage.php">Over ons</a> </li>
+                <li> <a href="tips.php">Tips voor duurzaamheid</a></li>
             </ul>
         </div>
         <div id="sidebar">
@@ -57,9 +74,9 @@
             </div>
 
             <ul>
-                <li><a href="main.html">Home page</a> </li>
-                <li> <a href="overonspage.html">Over ons</a></li>
-                <li><a href="tips.html">Tips voor duurzaamheid</a></li>
+                <li><a href="main.php">Home page</a> </li>
+                <li> <a href="overonspage.php">Over ons</a></li>
+                <li><a href="tips.php">Tips voor duurzaamheid</a></li>
             </ul>
         </div>
 

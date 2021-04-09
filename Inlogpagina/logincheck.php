@@ -2,6 +2,7 @@
 <?php 
 session_start();
 ?>
+    <link rel="stylesheet" href="../css/Style.css">
 </HEAD>
 <BODY>   
 
@@ -40,7 +41,7 @@ session_start();
     {
        echo "Je bent ingelogd<hr>";
        $_SESSION['username'] = $gebruikersnaam;
-       echo "Klik <a href ='../main.html'>hier</a> om naar de volgende beveiligde site te gaan";       
+       echo "Klik <a href ='../main.php'>hier</a> om naar de volgende beveiligde site te gaan";       
     }
     else
     {

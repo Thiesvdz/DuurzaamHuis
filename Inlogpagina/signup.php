@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Hier kunt u zich aanmelden</title>
+        <link rel="stylesheet" href="../css/Style.css">
     </head>
 <body>
     <?php
