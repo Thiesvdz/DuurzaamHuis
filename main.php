@@ -22,7 +22,7 @@
 
     if(!isset($_SESSION['username']))
     {
-        echo "Je bent niet ingelogd! Klik <a href='Inlogpagina/form.html'>hier<a> om in te loggen.";
+        echo "Je bent niet ingelogd! Klik <a href='Inlogpagina/form.html'>hier</a> om in te loggen.";
         exit();
     }
     ?>
