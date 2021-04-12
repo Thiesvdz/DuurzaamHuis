@@ -14,7 +14,7 @@
 
     if($password1 !== $password2)
     {
-        echo "De wachtwoordem komen niet overeen. Klik <a href='signup.html'>hier</a> om terug te gaan";
+        echo "De wachtwoorden komen niet overeen. Klik <a href='signup.html'>hier</a> om terug te gaan";
         exit();
     }
 
