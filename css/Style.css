@@ -216,15 +216,23 @@ a:link {
 }
 
 @media screen and (max-width: 505px){
+    #dashboard{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:"Header        Header        Header        Header"
+                            "Temperatuur   Temperatuur   Temperatuur   Temperatuur"
+                            "Licht         Licht         Licht         Licht"
+                            "Water         Water         Water         Water"
+                            "Elektriciteit Elektriciteit Elektriciteit Elektriciteit"
+                            "Gas           Gas           Gas           Gas";
+    }
+    
     .Elektriciteit{
         grid-area: Elektriciteit;
         border-radius: 2rem;
         display: flex;
         flex-direction: column;
     }
-    .lichtknoppen{
-        margin-left: 20px;
-    }
+
   }
 @media screen and (min-width: 1980px){
   .Elektriciteit {
