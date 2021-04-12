@@ -130,7 +130,7 @@
         
         <div class="item Elektriciteit">
             <div class="apparaat" data-id="KA">
-                <div id="huisapparaattekst">Woonkamer apperatuur</div>
+                <div id="huisapparaattekst">woonkamer apparatuur</div>
                 <div>
                     <p>minuten per dag: <span>0</span></p>
                     <input type="range" min="0" max="240" step="10" value="15" class="slider" id="myRange"/>
@@ -139,7 +139,7 @@
                 <button class="button">Toon verbruik</button>
             </div>
             <div class="apparaat" data-id="WA">
-                <div id="wasmachinetekst">Woonkamer apperatuur</div>
+                <div id="wasmachinetekst">Woonkamer apparatuur</div>
                 <div>
                     <p>minuten per dag: <span>0</span></p>
                     <input type="range" min="0" max="240" step="10" value="15" class="slider" id="myRange"/>
