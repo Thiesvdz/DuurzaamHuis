@@ -27,11 +27,11 @@ button1.addEventListener('click', () => {
 
     let image = document.getElementById('lamp-uit');
     if(image_tracker == 'lu'){
-        image.src = 'Images/lamp-aan.png';
+        image.src = 'Images/LampAan.png';
         image_tracker = 'la';
     }
     else{
-        image.src = 'Images/lamp-uit.png';
+        image.src = 'Images/LampUit.png';
         image_tracker = 'lu';
     }
 }
@@ -45,11 +45,11 @@ button2.addEventListener('click', () => {
 
     let image2 = document.getElementById('lamp-uit2');
     if(image2_tracker == 'lu'){
-        image2.src = 'Images/lamp-aan.png';
+        image2.src = 'Images/LampAan.png';
         image2_tracker = 'la';
     }
     else{
-        image2.src = 'Images/lamp-uit.png';
+        image2.src = 'Images/LampUit.png';
         image2_tracker = 'lu';
     }
 }
@@ -62,11 +62,11 @@ button3.addEventListener('click', () => {
 
     let image3 = document.getElementById('lamp-uit3');
     if(image3_tracker == 'lu'){
-        image3.src = 'Images/lamp-aan.png';
+        image3.src = 'Images/LampAan.png';
         image3_tracker = 'la';
     }
     else{
-        image3.src = 'Images/lamp-uit.png';
+        image3.src = 'Images/LampUit.png';
         image3_tracker = 'lu';
     }
 }

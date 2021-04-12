@@ -222,6 +222,9 @@ a:link {
         display: flex;
         flex-direction: column;
     }
+    .lichtknoppen{
+        margin-left: 20px;
+    }
   }
 @media screen and (min-width: 1980px){
   .Elektriciteit {
@@ -343,9 +346,6 @@ input[type=checkbox]:checked +
     background-color: rgb(54, 224, 2);
 }
 
-
-
-
 #grafiek, #grafiek1 {
     background-color: #ffffff;
     border: 2px solid black;
@@ -354,7 +354,6 @@ input[type=checkbox]:checked +
     color: rgb(0, 17, 255);
     margin: 10px 10px 20px 10px;
 }
-
 
 .grafiekg{
     display: flex;
@@ -369,6 +368,7 @@ input[type=checkbox]:checked +
     margin-right: 30px;
     
 }
+
 #lamp-uit, #lamp-uit2, #lamp-uit3{
     width: 60px;
     height: 60px;
