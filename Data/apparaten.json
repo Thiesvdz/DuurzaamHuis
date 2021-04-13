@@ -1,12 +1,12 @@
 [
     {
-        "naam": "Woonkamer apperatuur",
+        "naam": "Woonkamer apparatuur",
         "vermogen": 4,
         "image": "",
         "code": "WA"
     },
     {
-        "naam": "Keuken apperatuur",
+        "naam": "Keuken apparatuur",
         "vermogen": 6,
         "image": "",
         "code": "KA"
