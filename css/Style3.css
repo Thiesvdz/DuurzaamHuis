@@ -71,8 +71,12 @@ body{
 
 .nav ul li{
     list-style: none;
-    margin: 20px
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 23px;
 }
+
 
 @media screen and (max-width: 1250px){
     #dashboard{
@@ -162,11 +166,6 @@ body{
     background-repeat: no-repeat;
     background-position: 10px center; 
     margin-left: 20px;
-}
-
-.nav ul li{
-    list-style: none;
-    margin: 20px
 }
 
 a:link {
