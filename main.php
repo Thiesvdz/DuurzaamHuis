@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/Style.css">
     <script src="Data/js/apparaten.js"></script>
@@ -152,7 +152,7 @@
             <ul>
                 <li><a href="main.php">Home page</a></li>
                 <li><a href="overonspage.php">Over ons</a></li>
-                <li><a href="tips.php">Tips voor duurzaamheid</a></li>
+                <li><a href="tips.php">Eco tips</a></li>
             </ul>
         </div>
         <div id="sidebar">
@@ -164,7 +164,7 @@
             <ul>
                 <li><a href="main.php">Home page</a></li>
                 <li><a href="overonspage.php">Over ons</a></li>
-                <li><a href="tips.php">Tips voor duurzaamheid</a></li>
+                <li><a href="tips.php">Eco tips</a></li>
             </ul>
         </div>
     </div>

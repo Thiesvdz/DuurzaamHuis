@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/Style2.css">
+    <link rel="stylesheet" href="css/style2.css">
     <link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet">
     <title>Duurzaam Huis tips</title>
     <script src="js/script.js"></script>
@@ -64,7 +64,7 @@
             <ul>
                 <li><a href="main.php">Home page</a></li>
                 <li> <a href="overonspage.php">Over ons</a></li>
-                <li><a href="tips.php">Tips voor duurzaamheid</a></li>
+                <li><a href="tips.php">Eco tips</a></li>
             </ul>
         </div>
         <div id="sidebar">
@@ -77,7 +77,7 @@
             <ul>
                 <li><a href="main.php">Home page</a></li>
                 <li><a href="overonspage.php">Over ons</a></li>
-                <li><a href="tips.php">Tips voor duurzaamheid</a></li>
+                <li><a href="tips.php">Eco tips</a></li>
             </ul>
         </div>
 

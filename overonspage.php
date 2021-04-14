@@ -63,7 +63,7 @@
             <ul>
                 <li> <a href="main.php">Home page</a> </li>
                 <li> <a href="overonspage.php">Over ons</a> </li>
-                <li> <a href="tips.php">Tips voor duurzaamheid</a></li>
+                <li> <a href="tips.php">Eco tips</a></li>
             </ul>
         </div>
         <div id="sidebar">
@@ -76,7 +76,7 @@
             <ul>
                 <li><a href="main.php">Home page</a> </li>
                 <li> <a href="overonspage.php">Over ons</a></li>
-                <li><a href="tips.php">Tips voor duurzaamheid</a></li>
+                <li><a href="tips.php">Eco tips</a></li>
             </ul>
         </div>
 
